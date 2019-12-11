@@ -6,8 +6,8 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Publish to Docker Repository
-      uses: MarcW1g/actions-docker-cicd-demo
+      uses: MarcW1g/actions-docker-cicd-demo@master
       with:
-        name: marcwiggerman/actions-docker-cicd-demo@master
+        name: marcwiggerman/actions-docker-cicd-demo
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
